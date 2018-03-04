@@ -1,10 +1,11 @@
 # Config Creator For James K's Remote Rig Resetter
-try:
-	import configparser
-except ImportError:
-	print("Please re-run this script with PYTHON3")
-	exit()
+import sys
 
+if sys.version_info < (3, 0):
+	print("Sorry, please use python 3.x by running 'python3 install.py'")
+	exit()
+	
+import configparser
 import RPi.GPIO as GPIO
 import time
 
