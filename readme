@@ -5,13 +5,21 @@ TAKE ALL RESPONSIBILITIES.
 SIMPLE INSTRUCTIONS:
 
         1 - Get the file!
+        
         2 - Unzip the file!
+        
         3 - Make sure your Pi has an internet connection!
+        
         4 - Ensure you have PYTHON 3 INSTALLED! (Default with raspian OS)
+        
         5 - Run the following 'python3 install.py'
+        
         6 - Follow any instructions as given on screen.
+        
         7 - Incase you didn't read the instructions at the end, run the following command 'python3 configCreator.py'
+        
         8 - Read all instructions carefully and follow as they say! DO THIS PROPERLY, OTHERWISE YOUR CONFIG FILE WILL NOT WORK. YOU CAN REMOVE A BROKEN CONFIG FILE WITH 'rm config.ini', and then re-run the configCreator.py
+        
         9 - Once the config has been generated, your commands are as follows:
                 
                 python3 RRR.py -c [COMMAND] -r [RIG NUMBER]
