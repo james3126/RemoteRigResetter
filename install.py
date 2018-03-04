@@ -4,7 +4,7 @@ from subprocess import Popen, PIPE, STDOUT, call
 import sys
 
 if sys.version_info < (3, 0):
-	print("Sorry, please use python 3.x by running 'python3 install.py'\n")
+	print("Sorry, please use python 3.x by running 'python3 install.py'")
 	exit()
 	
 print("WELCOME TO JAMES K's INSTALLER FOR RRR!")
