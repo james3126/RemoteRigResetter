@@ -1,0 +1,26 @@
+I TAKE NO RESPONSIBILITY FOR ANYTHING THAT YOU DO WITH OR IN RELATION TO THIS CODE.
+ANY AND ALL DAMAGES ARE FULLY YOUR FAULT, AND BY USING THIS SOFTWARE YOU AGREE TO
+TAKE ALL RESPONSIBILITIES.
+
+SIMPLE INSTRUCTIONS:
+
+        1 - Get the file!
+        2 - Unzip the file!
+        3 - Make sure your Pi has an internet connection!
+        4 - Ensure you have PYTHON 3 INSTALLED! (Default with raspian OS)
+        5 - Run the following 'python3 install.py'
+        6 - Follow any instructions as given on screen.
+        7 - Incase you didn't read the instructions at the end, run the following command 'python3 configCreator.py'
+        8 - Read all instructions carefully and follow as they say! DO THIS PROPERLY, OTHERWISE YOUR CONFIG FILE WILL NOT WORK. YOU CAN REMOVE A BROKEN CONFIG FILE WITH 'rm config.ini', and then re-run the configCreator.py
+        9 - Once the config has been generated, your commands are as follows:
+                
+                python3 RRRv1.py -c [COMMAND] -r [RIG NUMBER]
+
+                        -c  |   COMMANDS:
+                                ON      | START | BOOT
+                                OFF     | END   | KILL
+                                RESTART | REBOOT| CYCLE
+
+                        -r   |  RIG NUMBER WHICH IS THE SAME NUMBER AS THE RELAYS YOU ASSIGNED EARLIER!
+        
+        10 - IF YOU NEED ANY HELP, PLEASE CONTACT ME: 'mail@jammyworld.com', OR QUESTION ON MY GITHUB UNDER ISSUES.
