@@ -52,7 +52,7 @@ print("Restarting apache2...")
 os.system("sudo service apache2 restart")
 print("Apache2 restarted...")
 
-print("\n\n\nPLEASE NAVIGATE TO THE FOLLOWING IP, USING ANOTHER OCMPUTER ON YOUR NETWORK:\n\n"+str(ip)+"\n\n")
+print("\n\n\nPLEASE NAVIGATE TO THE FOLLOWING IP, USING ANOTHER COMPUTER ON YOUR NETWORK:\n\n"+str(ip)+"\n\n")
 response = input("Did the page show up with:\n--Hello world\n--Date and time\n--Lots of PHP information\n\n[Y|n] : ")
 if response == "N":
 	print("ERROR! Please contact: 'mail@jammyworld.com' with error code '2'")
