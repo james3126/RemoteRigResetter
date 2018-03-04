@@ -1,5 +1,12 @@
 # James K's Relay-Based Python3 Remote Rig Resetter V1.0 - 4th March 2018 
 # Import modules
+
+import sys
+
+if sys.version_info < (3, 0):
+	print("Sorry, please use python 3.x by running 'python3 install.py'")
+	exit()
+
 import RPi.GPIO as GPIO
 import time
 import argparse
