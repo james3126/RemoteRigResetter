@@ -1,7 +1,12 @@
 # Installer for RRR!
 import os
 from subprocess import Popen, PIPE, STDOUT, call
+import sys
 
+if sys.version_info < (3, 0):
+	print("Sorry, please use python 3.x by running 'python3 install.py'\n")
+	exit()
+	
 print("WELCOME TO JAMES K's INSTALLER FOR RRR!")
 print("THIS WILL SET EVERYTHING UP, INCLUDING A CONTROL WEBPAGE ACCESSIBLE ON YOUR LOCAL NETWORK!")
 proc = Popen("hostname -I", shell=True, stdout=PIPE)
