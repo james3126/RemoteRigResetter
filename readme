@@ -14,7 +14,7 @@ SIMPLE INSTRUCTIONS:
         8 - Read all instructions carefully and follow as they say! DO THIS PROPERLY, OTHERWISE YOUR CONFIG FILE WILL NOT WORK. YOU CAN REMOVE A BROKEN CONFIG FILE WITH 'rm config.ini', and then re-run the configCreator.py
         9 - Once the config has been generated, your commands are as follows:
                 
-                python3 RRRv1.py -c [COMMAND] -r [RIG NUMBER]
+                python3 RRR.py -c [COMMAND] -r [RIG NUMBER]
 
                         -c  |   COMMANDS:
                                 ON      | START | BOOT
