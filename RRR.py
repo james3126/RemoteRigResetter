@@ -1,5 +1,4 @@
 # James K's Relay-Based Python3 Remote Rig Resetter V1.0 - 4th March 2018 
-VERSION = 1
 # Import modules
 import RPi.GPIO as GPIO
 import time
@@ -16,13 +15,13 @@ args = parser.parse_args()
 try:
 	command = args.com.upper()
 except AttributeError:
-	print("Usage: python3 RRR"+str(VERSION)+".py -c [ON|BOOT|START / OFF|KILL|END / CYCLE|REBOOT|RESTART] -r [RIG-NUMBER]")
+	print("Usage: python3 RRR.py -c [ON|BOOT|START / OFF|KILL|END / CYCLE|REBOOT|RESTART] -r [RIG-NUMBER]")
 	exit()
 
 try:
 	rigNum = args.rig
 except AttributeError:
-	print("Uage: python3 RRR"+str(VERSION)+".py -c [ON|BOOT|START / OFF|KILL|END / CYCLE|REBOOT|RESTART] -r [RIG-NUMBER]")
+	print("Uage: python3 RRR.py -c [ON|BOOT|START / OFF|KILL|END / CYCLE|REBOOT|RESTART] -r [RIG-NUMBER]")
 	exit()
 
 # Set GPIO pin mode to BCM (Pin numbers, not GPIO types)
