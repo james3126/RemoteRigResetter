@@ -32,3 +32,34 @@ SIMPLE INSTRUCTIONS:
                         -r   |  RIG NUMBER WHICH IS THE SAME NUMBER AS THE RELAYS YOU ASSIGNED EARLIER!
         
         10 - IF YOU NEED ANY HELP, PLEASE CONTACT ME: 'mail@jammyworld.com', OR QUESTION ON MY GITHUB UNDER ISSUES.
+
+---------------------------------------------------
+FEATURES UNDER DEVELOPMENT
+---------------------------------------------------
+Test out the new install script
+
+Add to install script to move across all files to the www dir
+
+get install script to force a first run through of the config creator to move control to the www file.
+
+Create ascii form of pi GPIO pins to show where to connect
+
+Create instructions on how to use the main command from the cmd line
+
+Create a fully working page for a single pi
+
+Create a central software deployment for a main PI ( MAKE IT USEABLE FOR ANY MACHINE THOUGH, SO KEEP PHP BOUND )
+CENTRAL PI/LINUX RELEASE AND A WINDOWS RELEASE FOR WAMP ADDON
+
+work on a way of naming a pi, and registering it to one central peice of software
+
+Have named pi's show up and display once added with their individual relays and rigs attatched
+
+Allow naming of each relay in an extension of each config.ini
+
+Have easy deployment of software by mass
+
+Allow expert users to ship the whole process of automated setup, and allow a upload to jamdrive of the config,
+then deployment of config to each pi. Allow a test to then be ran to make sure tha all relays on the deployed
+pi's match up with the first pi's config that was used to generate the main config. Allow people to take control
+of the pins without use of my software
