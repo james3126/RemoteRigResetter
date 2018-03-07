@@ -1,0 +1,149 @@
+body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	background-color: #F2F2F2;
+}
+
+
+/* --------------- NAV BAR --------------- */
+.spaced {
+	margin-bottom: 8px;
+}
+.nav-button {
+	width: 100%;
+	height: 40px;
+	font-size: 40px;
+	font-family: "ConcursoItalian BTN Regular";
+	background-color: #828282;
+	overflow: hidden;
+	display: block;
+}
+.centered-text {
+	text-align: center;
+}
+.white-text {
+	color: white;
+}
+.clear-a-tag {
+	text-decoration:none;
+}
+.font-awesome {
+	font-size: 38;
+	width: 100%;
+	height: 100%;
+	float: left;
+}
+.nav-button-icon {
+	width: 50px;
+    padding: 0;
+    height: 100%;
+    margin: 0;
+    float: left;
+}
+.nav-button-text {
+	width: calc(100% - 50px);
+    height: 100%;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+	text-align: left;
+}
+.nav-text {
+	margin-left: 10px;
+}
+#nav-bar-wrapper {
+	display: inline-block;
+	width: 200px;
+	height: 100%;
+	min-height: 500px;
+	background-color: #ADADAD;
+	position: absolute;
+}
+	#logo-wrapper {
+		width: 100%;
+		height: 100px;
+		font-family: "Cinema Gothic BTN Inline Regular";
+		text-align: center;
+	}
+		#logo-rrr {
+			font-size: 80px;
+		}
+		#logo-other {
+			font-size: 17px;
+			display: block;
+			transform: translateY(-20px);
+			font-weight: 500;
+		}
+
+	#nav-bar-break	{
+		border-style: solid;
+		border-width: 0px 0px 3px 0px;
+		border-color: #F2F2F2;
+		margin-bottom: 10px;
+		margin-top: 10px;
+	}
+	
+	#nav-bar-top-wrapper {
+		
+	}
+		#nav-home-button {
+			
+		}
+		#nav-control-button {
+			
+		}
+		#nav-add-new-pi-button {
+			
+		}
+		
+	#nav-bar-bottom-wrapper {
+		bottom: 0;
+		position: absolute;
+		width: 100%;
+	}
+		#nav-github-button {
+			
+		}
+		#nav-register-button {
+			
+		}
+		#nav-login-button {
+			
+		}
+
+/* --------------- BODY --------------- */
+#body-wrapper {
+	display: inline-block;
+	width: calc(100% - 200px);
+	position: absolute;
+	left: 200px;
+	height: 100%;
+}
+
+#body-content {
+	
+}
+#body-content p {
+	margin: 0;
+	padding: 0;
+}
+
+
+
+
+
+
+/* --------------- CUSTOM FONTS --------------- */
+
+@font-face {
+	font-family: "ConcursoItalian BTN Regular";
+	src: url('./ConcursoItalian BTN Regular.ttf');
+	url('./ConcursoItalian BTN Regular.ttf');
+}
+@font-face {
+	font-family: "Cinema Gothic BTN Inline Regular";
+	src: url('./Cinema Gothic BTN Inline Regular.ttf');
+	url('./Cinema Gothic BTN Inline Regular.ttf');
+}
