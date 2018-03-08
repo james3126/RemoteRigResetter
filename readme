@@ -36,9 +36,7 @@ SIMPLE INSTRUCTIONS:
 ---------------------------------------------------
 FEATURES UNDER DEVELOPMENT
 ---------------------------------------------------
-Test out the new install script
-
-get install script to force a first run through of the config creator to move control to the www file. 
+Test out the new install script 
 
 Create ascii form of pi GPIO pins to show where to connect
 
@@ -66,3 +64,5 @@ of the pins without use of my software
 COMPELTED FEATRES
 ---------------------------------------------------
 Add to install script to move across all files to the www dir
+
+get install script to force a first run through of the config creator to move control to the www file.
