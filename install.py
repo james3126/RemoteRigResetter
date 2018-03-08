@@ -59,15 +59,16 @@ try:
                 
                 
         if CLIENT == True:
-                files_to_move = ['/webfiles-local/index.php','/webfiles-local/control.php']
+                fileDir = '/webfiles-local/'
+                files_to_move = ['index.php','control.php']
+                for file_name in files_to_move:
+                        move_file(fileDir+file_name,installDir,file_name)
 
         if CLIENT != True:
-                print("CONTINUE HERE")
-        
-        
-        
-        
-        
+                fileDir = '/webfiles/'
+                files_to_move = ['index.php','header.html','control.php','style.css','ConcursoItalian BTN Regular.ttf','Cinema Gothic BTN Inline Regular.ttf']
+                for file_name in files_to_move:
+                        move_file(fileDir+file_name,installDir,file_name)
         
         print("Giving usergroup www-data perms to control usergroup GPIO...")
         os.system("sudo usermod -a -G gpio www-data")
@@ -92,6 +93,3 @@ except KeyboardInterrupt:
         print("\n\nINSTALL CANCELED!")
         print("EXITING...")
         exit()
-
-
-
