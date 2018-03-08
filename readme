@@ -42,7 +42,7 @@ Create ascii form of pi GPIO pins to show where to connect
 
 Create instructions on how to use the main command from the cmd line
 
-Create a fully working page for a single pi
+Create a good looking page for a single pi
 
 Create a central software deployment for a main PI ( MAKE IT USEABLE FOR ANY MACHINE THOUGH, SO KEEP PHP BOUND )
 CENTRAL PI/LINUX RELEASE AND A WINDOWS RELEASE FOR WAMP ADDON
@@ -66,3 +66,5 @@ COMPELTED FEATRES
 Add to install script to move across all files to the www dir
 
 get install script to force a first run through of the config creator to move control to the www file.
+
+Create a fully working page for a single pi
