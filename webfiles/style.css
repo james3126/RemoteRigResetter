@@ -121,19 +121,26 @@ body {
 	left: 200px;
 	height: 100%;
 }
+	#home-wrapper {
+		display: table;
+		position: absolute;
+		height: 100%;
+		width: 100%;
+	}
+		#home-wrapper-outter {
+			display: table-cell;
+			vertical-align: middle;
+		}		
+			#home-wrapper-inner {
+				margin-left: auto;
+				margin-right: auto; 
+				width: 50%;
+				height: 60%;
+				background-color: #ADADAD;
+			}
 
-#body-content {
 	
-}
-#body-content p {
-	margin: 0;
-	padding: 0;
-}
-
-
-
-
-
+	
 
 /* --------------- CUSTOM FONTS --------------- */
 
