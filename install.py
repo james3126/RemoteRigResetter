@@ -87,7 +87,12 @@ try:
         print("Successfull installation!")
         print("Please now connect your relay board to your Pi's GPIO pins if you haven't already!")
         print("DO NOT CONNECT THE RELAYS TO YOUR RIGS YET!")
-        print("Now run the following command to continue:\n\npython3 configCreator.py")
+        
+        config = input("Would you like to run the first time config setup? ENSURE ALL RELAYS ARE PLUGGED IN! [Y/n]:")
+        if config == "Y" or "":
+                os.system("python3 configCreator.py")
+        else:
+                print("Once you are ready to config, type the following to continue:\n\npython3 configCreator.py")
 
 except KeyboardInterrupt:
         print("\n\nINSTALL CANCELED!")
