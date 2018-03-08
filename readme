@@ -38,9 +38,7 @@ FEATURES UNDER DEVELOPMENT
 ---------------------------------------------------
 Test out the new install script
 
-Add to install script to move across all files to the www dir
-
-get install script to force a first run through of the config creator to move control to the www file.
+get install script to force a first run through of the config creator to move control to the www file. 
 
 Create ascii form of pi GPIO pins to show where to connect
 
@@ -63,3 +61,8 @@ Allow expert users to ship the whole process of automated setup, and allow a upl
 then deployment of config to each pi. Allow a test to then be ran to make sure tha all relays on the deployed
 pi's match up with the first pi's config that was used to generate the main config. Allow people to take control
 of the pins without use of my software
+
+---------------------------------------------------
+COMPELTED FEATRES
+---------------------------------------------------
+Add to install script to move across all files to the www dir
