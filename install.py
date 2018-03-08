@@ -10,12 +10,17 @@ try:
 
         print("WELCOME TO JAMES K's INSTALLER FOR RRR!")
         print("THIS WILL SET EVERYTHING UP, INCLUDING A CONTROL WEBPAGE ACCESSIBLE ON YOUR LOCAL NETWORK!")
+        
+        CLIENT = int(input("Is this a client / solo installation, or a central / server insallation (Default = Client)\n[0] client / solo\n[1] central / server\nSelect a number. If you dont know, leave it blank: "))
+        if CLIENT == "":
+                CLIENT = True:
+        
         webhost = input("Would you like apache2 + PHP5 to be setup automatically (THIS WILL OVERWRITE ALL EXISTING WEBHOST DATA) [Y/n]: ").upper()
-
+        
         proc = Popen("hostname -I", shell=True, stdout=PIPE)
         output = proc.communicate()[0]
-        ip = output.decode("utf-8").rstrip('\n')
-
+        ip = output.decode("utf-8").rstrip('\n')              
+                
         print("Updating Pi...")
         os.system("sudo apt-get update")
         print("Pi updated...")
@@ -46,14 +51,24 @@ try:
                 os.system("sudo rm /var/www/html/index.html")
                 print("index.html removed....")
 
-        print("Moving index.php file to "+installDir+"...")
-        os.system("sudo mv index.php "+installDir+"index.php")
-        print("index.php file successfully moved...")
+                
+        def move_file(fileDir,installDir,fileName):
+                print("Moving "+fileName+" to "+installDir+"...")
+                os.system("sudo mv "+fileDir+" "+installDir+fileName)
+                print(fileName+" successfully moved...")
+                
+                
+        if CLIENT == True:
+                files_to_move = ['/webfiles-local/index.php','/webfiles-local/control.php']
 
-        print("Moving control.php file to "+installDir+"...")
-        os.system("sudo mv control.php "+installDir+"control.php")
-        print("control.php file successfully moved...")
-
+        if CLIENT != True:
+                print("CONTINUE HERE")
+        
+        
+        
+        
+        
+        
         print("Giving usergroup www-data perms to control usergroup GPIO...")
         os.system("sudo usermod -a -G gpio www-data")
         print("Perms given...")
