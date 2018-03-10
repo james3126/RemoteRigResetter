@@ -24,8 +24,11 @@ try:
 	GPIO.setmode(GPIO.BCM)
 
 	config = configparser.ConfigParser()
-	config['CUSTOM'] = {}
-
+	config['PINS'] = {}
+	config['TOTAL_RELAYS'] = {}
+	config['RELAY_NAMES'] = {}
+	config['RELAYS']["total"] = str(totalRelays)
+	
 	ALLPINS = [2,3,4,17,27,22,10,9,11,5,6,13,19,26,14,15,18,23,25,8,7,12,16,20,21]
 	mappedPins = 0
 	testNum = 0	
@@ -46,7 +49,7 @@ try:
 			activeRelay = int(input("WHICH RELAY HAS ACTIVATED: "))
 			if isinstance(activeRelay, int) == True:
 				GPIO.output(pin, GPIO.HIGH)
-				config['CUSTOM']["rig"+str(activeRelay)] = str(pin)
+				config['PINS']["rig"+str(activeRelay)] = str(pin)
 				print("Mapped pin ("+str(pin)+") to relay ("+str(activeRelay)+")")
 				mappedPins += 1
 			else:
