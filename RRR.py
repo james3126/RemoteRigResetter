@@ -45,8 +45,8 @@ except FileNotFoundError:
 pinList = []
 config = configparser.ConfigParser()
 config.read('config.ini')
-for key in config['CUSTOM']:
-	pinList.append(int(config['CUSTOM'][key]))
+for key in config['PINS']:
+	pinList.append(int(config['PINS'][key]))
 
 # ----------------- DEFS ------------------
 # Setup bootRig def to control pins
